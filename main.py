@@ -5,3 +5,8 @@ c = a[1::2]
 
 # 2多[]命名
 a,b,c =[[]  for _ in range(3)]
+
+#reduce list字符串合并
+from functools import reduce
+line = [str(i) for i in range(10)]
+line[4] = reduce( lambda x,y: x+y , line[4:])
